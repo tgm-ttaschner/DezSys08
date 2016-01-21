@@ -8,6 +8,8 @@
 \label{sec:Nutzung von GPUs in normalen Desktop-Anwendungen}
 Im privaten Bereich gibt es praktisch keine Anwendung für GPGPU. Ausnahmen sind Programme für die Videobearbeitung. Typische Alltagssoftware lässt sich kaum parallelisieren. Im Bereich der Wissenschaft und Technik sieht es dann schon wieder anders aus. Hier machen mehrere GPGPU-taugliche Grafikkarten einen normalen PC zu einem Supercomputer.
 Voraussetzung dafür ist ein hochleistungsfähiger Grafikprozessor, der bis zu 800 Kerne hat und parallel arbeitet. Damit ein Grafikprozessor überhaupt sinnvoll genutzt werden kann, muss die Anwendung eine sehr hohe Zahl von parallel ausführbaren Berechnungen enthalten. Wenn man die Rechenwerke eines Grafikprozessors kontinuierlich auslasten will, dann sollte man mindestens eine Millionen gleichartiger Berechnungen liefern können, sonst hat man gegenüber einer normalen CPU keine Vorteile. Die GPU-Rechenwerke müssen mit einem kontinuierlichen Datenstrom versorgt werden. Aus diesem Grund bezeichnet man sie auch als Stream-Prozessoren. \cite{elektronik_gpgpu}
+Zu Ergänzen ist die erste Aussage auch noch mit Mathematikprogrammen wie Matlab oder ähnlichem.
+\cite{matlab}
 
 \subsubsection{Anwendungen}
 \label{sec:Anwendungen}
@@ -25,3 +27,16 @@ Voraussetzung dafür ist ein hochleistungsfähiger Grafikprozessor, der bis zu 8
 
 \subsection{Vorteile der GPU bei rechenintensiven Anwendungen}
 \label{sec:Vorteile der GPU bei rechenintensiven Anwendungen}
+GPUs haben den Vorteil, dass sie auf spezielle Arten von Prozessen optimiert sind. CPUs sind hingegen darauf ausgelegt beliebige Aufgaben zu verarbeiten. Um rechenintensive Anwendungen auch tatsächlich auf der GPU laufen lassen zu können, müssen/sollten diese gut parallelisierbar sein. 
+Im Vergleich zur CPU hat man wesentlich mehr Kerne auf die parallelisiert werden kann.
+
+\subsection{Entwicklungsumgebungen und Programmiersprachen}
+Von NVidia wird unter Anderem eine Visual Studio Abwandlung namens NSight zur Verfügung gestellt, welche es einem ermöglicht in CUDA C/C++, OpenCL, DirectCompute, Direct3D, and OpenGL zu programmieren.\\
+OpenCL Studio eröffnet einem die Möglichkeit mit OpenCL und OpenGL zu arbeiten.\\
+NVidia CUDA Toolkit bietet einem die Möglichkeit CUDA Applikationen in C und C++ zu Programmieren.
+Applikationen für OpenCL werden zum Großteil in C oder C++ programmiert. OpenCL C/C++ bieten die Option direkt für OpenCL zu programmieren.
+
+\subsection{Transkompilieren}
+Um bestehende Applikationen auf GPUs sinnvoll zu nutzen, müssen diese prinzipiell parallelisierbar sein.
+Das CUDA Toolkit stellt einem einen Transcompiler für C und C++ zur Verfügung, es lagert die rechenintensiven Teile auf die GPU aus.
+Rootbeer ist ein GPUCompiler, welcher Javacode auf der GPU ausführen lässt, ohne dass der Code extra angepasst werden muss.

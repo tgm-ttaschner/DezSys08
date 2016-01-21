@@ -8,5 +8,13 @@ I was expecting an "="---line 11 of file references.bib
  : }
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
+Warning--entry type for "matlab" isn't style-file defined
+--line 14 of file references.bib
+I was expecting an "="---line 16 of file references.bib
+ : 
+ : }
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
 Warning--all relevant fields are empty in elektronik_gpgpu
-(There was 1 error message)
+Warning--all relevant fields are empty in matlab
+(There were 2 error messages)

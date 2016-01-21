@@ -7,3 +7,4 @@
 \contentsline {subsection}{\numberline {2.1}Nutzung von GPUs in normalen Desktop-Anwendungen}{2}{subsection.2.1}
 \contentsline {subsubsection}{\numberline {2.1.1}Anwendungen}{2}{subsubsection.2.1.1}
 \contentsline {subsection}{\numberline {2.2}Vorteile der GPU bei rechenintensiven Anwendungen}{2}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Entwicklungsumgebungen}{3}{subsection.2.3}
