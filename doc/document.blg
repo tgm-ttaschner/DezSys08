@@ -1,0 +1,12 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: document.aux
+The style file: unsrt.bst
+Database file #1: references.bib
+Warning--entry type for "elektronik_gpgpu" isn't style-file defined
+--line 9 of file references.bib
+I was expecting an "="---line 11 of file references.bib
+ : 
+ : }
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Warning--all relevant fields are empty in elektronik_gpgpu
+(There was 1 error message)

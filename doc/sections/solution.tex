@@ -3,66 +3,25 @@
 \section{Ergebnisse}
 \label{sec:Ergebnisse}
 
-Hier sollen die Schritte der Laborübung erläutert werden. Alle Fragestellungen der Lehrkraft müssen hier beantwortet werden. Etwaige Probleme bzw. Schwierigkeiten sollten ebenfalls hier angeführt werden.
 
-Es kann gut möglich sein, dass Lehrkräfte hier auch noch andere Eckpunkte explizit verlangen. Diese können dann in der selben Hierarchiestufe wie die \textit{\nameref{sec:Ergebnisse}} eingeordnet werden. Viel Spass nun mit einer kleinen Übersicht von \LaTeX-Elementen.
+\subsection{Nutzung von GPUs in normalen Desktop-Anwendungen}
+\label{sec:Nutzung von GPUs in normalen Desktop-Anwendungen}
+Im privaten Bereich gibt es praktisch keine Anwendung für GPGPU. Ausnahmen sind Programme für die Videobearbeitung. Typische Alltagssoftware lässt sich kaum parallelisieren. Im Bereich der Wissenschaft und Technik sieht es dann schon wieder anders aus. Hier machen mehrere GPGPU-taugliche Grafikkarten einen normalen PC zu einem Supercomputer.
+Voraussetzung dafür ist ein hochleistungsfähiger Grafikprozessor, der bis zu 800 Kerne hat und parallel arbeitet. Damit ein Grafikprozessor überhaupt sinnvoll genutzt werden kann, muss die Anwendung eine sehr hohe Zahl von parallel ausführbaren Berechnungen enthalten. Wenn man die Rechenwerke eines Grafikprozessors kontinuierlich auslasten will, dann sollte man mindestens eine Millionen gleichartiger Berechnungen liefern können, sonst hat man gegenüber einer normalen CPU keine Vorteile. Die GPU-Rechenwerke müssen mit einem kontinuierlichen Datenstrom versorgt werden. Aus diesem Grund bezeichnet man sie auch als Stream-Prozessoren. \cite{elektronik_gpgpu}
 
-\subsection{Tabelle}
-\renewcommand{\arraystretch}{1.5}
-\begin{table}[!h]
-	\center
-	\begin{tabular}{ | @{\hspace{3mm}} c @{\hspace{3mm}} | @{\hspace{3mm}} l @{\hspace{3mm}} | }
-		\hline Header & Kopf\\ \hline\hline
-		\textbf{Lorem} & Ipsum dolor sit amet, consetetur sadipscing elitr\\ \hline
-		\textbf{Ipsum} & At vero eos et accusam et justo duo dolores et ea rebum.\\
-			& Stet clita kasd gubergren, no sea takimata sanctus\\ \hline
-		\textbf{Dolor} & Consetetur sadipscing elitr, sed diam nonumy\\\hline
-	\end{tabular}
-	\caption{Lorem ipsum dolor sit amet \cite{tanenbaum2007verteilte}}
-	\label{methoden}
-\end{table}
-
-\subsection{Aufzählung}
-
+\subsubsection{Anwendungen}
+\label{sec:Anwendungen}
 \begin{itemize}
-	\item \textbf{Lorem ipsum:} dolor sit amet, consetetur sadipscing elitr
-	\item sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat
-	\item ut labore et dolore magna aliquyam erat, sed diam voluptua
+\item Physikalisch Simulationen (Strömung, Gravitation, Temperatur, Crash-Tests)
+\item Komplexe Klimamodelle (Wettervorhersage)
+\item Datenanalysen und Finanzmathematik
+\item Verarbeitung von akustischen und elektrischen Signalen
+\item CT- und Ultraschall-Bildrekonstruktion
+\item Modellieren von Molekühlstrukturen
+\item Kryptografie
+\item Neuronale Netze
+\item Videotranskodierung
 \end{itemize}
 
-\subsection{Code}
-
-At vero eos et accusam et justo duo dolores et ea rebum.
-
-\begin{lstlisting}[style=Java, caption=Implizite Transaktion \cite{tanenbaum2007verteilte}]
-try{
-   gTransCur.begin();
-   //Perform the operation inside the transaction
-   not_registered = 
-       gRegistrarObjRef.register_for_courses(student_id,selected_course_numbers);
-
-
-   if (not_registered != null)
-
-     //If operation executes with no errors, commit the transaction
-     boolean report_heuristics = true;
-     gTransCur.commit(report_heuristics);
-
-   } else gTransCur.rollback();
-
-
-} catch(org.omg.CosTransactions.NoTransaction nte) {
-    System.err.println("NoTransaction: " + nte);
-    System.exit(1);
-} catch(org.omg.CosTransactions.SubtransactionsUnavailable e) {
-    System.err.println("Subtransactions Unavailable: " + e);
-    System.exit(1);
-} catch(org.omg.CosTransactions.HeuristicHazard e) {
-    System.err.println("HeuristicHazard: " + e);
-    System.exit(1);
-} catch(org.omg.CosTransactions.HeuristicMixed e) {
-    System.err.println("HeuristicMixed: " + e);
-    System.exit(1);
-}
-\end{lstlisting}
-
+\subsection{Vorteile der GPU bei rechenintensiven Anwendungen}
+\label{sec:Vorteile der GPU bei rechenintensiven Anwendungen}
