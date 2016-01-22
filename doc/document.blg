@@ -17,4 +17,8 @@ Warning--entry type for "GPUGrundlagen" isn't style-file defined
 --line 58 of file references.bib
 Warning--entry type for "Rootbeer" isn't style-file defined
 --line 72 of file references.bib
-(There were 8 warnings)
+Warning--entry type for "llvmfrontend" isn't style-file defined
+--line 86 of file references.bib
+Warning--entry type for "llvm" isn't style-file defined
+--line 92 of file references.bib
+(There were 10 warnings)

@@ -41,7 +41,7 @@ Es setzt auf DirectX 11 auf. \cite{AMP}
 \subsection{Transkompilieren}
 Um bestehende Applikationen auf GPUs sinnvoll zu nutzen, müssen diese prinzipiell parallelisierbar sein (unabhängige Teile). Zudem sollte das Programm einfach skalieren, es sollte für bspw. das 10-fache an Arbeit nicht das 15-fache an Ressourcen benötigen.
 Threads die auf GPUs laufen sollten im Algemeinen eher kurz gehalten sein und möglichst wenige Verzweigungen besitzen, da eine stetige Synchronisierung von Nöten ist. \cite{GPUGrundlagen}\\
-Das CUDA Toolkit stellt einem einen Transcompiler für C und C++ zur Verfügung, es lagert die rechenintensiven Teile auf die GPU aus.
+CUDA LLVM bietet einem die Möglichkeit für eine neue oder bereits existierende Sprache ein frontend zu schreiben, welches diese in die "Internal Representaion" von LLVM umwandelt. Viele frontends sind bereist vorhanden, siehe: \cite{llvm} \cite{llvmfrontend} \\
 Rootbeer ist ein GPUCompiler, welcher Javacode auf der GPU ausführen lässt, ohne dass der Code extra angepasst werden muss.\cite{Rootbeer}
 
 \subsection{Benchmarks}

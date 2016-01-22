@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
 \bibitem{elektronik_gpgpu}
 gpgpu.
@@ -26,6 +26,14 @@ Grundlagen der gpu-programmierung.
 \newblock
   https://www.matse.itc.rwth-aachen.de/dienste/public/show\_document.php?id=7251.
 \newblock Zuletzt besucht: 22.01.2016.
+
+\bibitem{llvm}
+Llvm.
+\newblock https://developer.nvidia.com/cuda-llvm-compiler.
+
+\bibitem{llvmfrontend}
+Llvm frontends.
+\newblock http://llvm.org/ProjectsWithLLVM/.
 
 \bibitem{Rootbeer}
 Rootbeer gpu compiler.

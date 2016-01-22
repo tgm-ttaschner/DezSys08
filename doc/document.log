@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.9.13)  22 JAN 2016 23:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.9.13)  22 JAN 2016 23:16
 entering extended mode
 **document.tex
 (document.tex
@@ -975,13 +975,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 49--50
  []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 61.
+(babel)             in language  on input line 60.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 61.
+(babel)             in language  on input line 60.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 61.
+(babel)             in language  on input line 60.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 61.
+(babel)             in language  on input line 60.
 [3]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 74.
@@ -991,7 +991,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 83.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 83.
- <images/GPUPI_100M.png, id=134, 730.98094pt x 421.575pt>
+ <images/GPUPI_100M.png, id=138, 730.98094pt x 421.575pt>
 File: images/GPUPI_100M.png Graphic file (type png)
 
 <use images/GPUPI_100M.png>
@@ -1001,7 +1001,7 @@ Package pdftex.def Info: images/GPUPI_100M.png used on input line 87.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/GPUPI_1B.png, id=135, 800.9925pt x 411.78844pt>
+<images/GPUPI_1B.png, id=139, 800.9925pt x 411.78844pt>
 File: images/GPUPI_1B.png Graphic file (type png)
 
 <use images/GPUPI_1B.png>
@@ -1011,7 +1011,7 @@ Package pdftex.def Info: images/GPUPI_1B.png used on input line 95.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/GPUPI_2B.png, id=136, 721.19438pt x 402.00188pt>
+<images/GPUPI_2B.png, id=140, 721.19438pt x 402.00188pt>
 File: images/GPUPI_2B.png Graphic file (type png)
 
 <use images/GPUPI_2B.png>
@@ -1021,7 +1021,7 @@ Package pdftex.def Info: images/GPUPI_2B.png used on input line 103.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/CompuBench.png, id=137, 365.11406pt x 562.35094pt>
+<images/CompuBench.png, id=141, 365.11406pt x 562.35094pt>
 File: images/CompuBench.png Graphic file (type png)
 
 <use images/CompuBench.png>
@@ -1078,13 +1078,13 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 68.
  [7 <./images/CompuBench.png>] (document.bbl
-Underfull \hbox (badness 2735) in paragraph at lines 14--18
+Underfull \hbox (badness 1924) in paragraph at lines 14--18
 []\T1/cmr/m/n/12 App sdk  a com-ple-te de-ve-lop-ment plat-form.  http://devel
 oper.amd.com/tools-and-
  []
 
 
-Underfull \hbox (badness 4518) in paragraph at lines 20--23
+Underfull \hbox (badness 3229) in paragraph at lines 20--23
 []\T1/cmr/m/n/12 C++ amp (c++ ac-ce-le-ra-ted mas-si-ve par-al-le-lism).  https
 ://msdn.microsoft.com/de-
  []
@@ -1122,13 +1122,13 @@ Package rerunfilecheck Info: File `document.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 76.
  ) 
 Here is how much of TeX's memory you used:
- 11279 strings out of 493673
- 164032 string characters out of 3141524
+ 11290 strings out of 493673
+ 164191 string characters out of 3141524
  272477 words of memory out of 3000000
- 14389 multiletter control sequences out of 15000+200000
+ 14398 multiletter control sequences out of 15000+200000
  12145 words of font info for 32 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 37i,12n,75p,815b,446s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 37i,11n,75p,815b,446s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\patrick\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi60
 0\tcrm1200.pk> <C:\Users\patrick\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknap
 pen\ec\dpi600\ecbx1440.pk> <C:\Users\patrick\AppData\Local\MiKTeX\2.9\fonts\pk\
@@ -1137,9 +1137,9 @@ ljfour\jknappen\ec\dpi600\ecrm1200.pk> <C:\Users\patrick\AppData\Local\MiKTeX\2
 cal\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1728.pk> <C:\Users\patric
 k\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx2488.pk><C:/P
 rogram Files (x86)/MiKTeX 2.9/fonts/type1/public/ccicons/ccicons.pfb>
-Output written on document.pdf (10 pages, 237573 bytes).
+Output written on document.pdf (10 pages, 238627 bytes).
 PDF statistics:
- 438 PDF objects out of 1000 (max. 8388607)
- 43 named destinations out of 1000 (max. 500000)
+ 443 PDF objects out of 1000 (max. 8388607)
+ 45 named destinations out of 1000 (max. 500000)
  138 words of extra memory for PDF output out of 10000 (max. 10000000)
 
