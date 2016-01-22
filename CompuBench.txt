@@ -1,0 +1,26 @@
+CPU
+10,546
+1,2914
+92,87
+40,611
+0,542
+3,4926
+29,667
+
+GPU
+12,456
+5,625
+456,143
+161,203
+1,2953
+24,378
+26,662
+
+Namen
+Face detection in MPixels/s (Viola-Jones Algorithmus)
+TV-L1 Optical Flow in MPixxels/s
+Ocean Surface Simulation in Frames/s (FFT)
+Particle Simulation -64k in MInteractions/s 
+T-Rex in Frames/s (Path tracer featuring dynamically updated acceleration structure and global illumination)
+Video Composition in Frames/s (Video composition)
+Bitcoin Mining in MHash/s (Bitcoin)
