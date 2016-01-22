@@ -65,14 +65,19 @@ Laptopmodell: Lenovo Ideapad y510p\\
 	\subitem VRAM: 2GB GDDR5(Hynix)
 	\subitem Core (Taktfrequenz): 980MHz (Boost bis 1020MHz)
 	\subitem Memory (Taktfrequenz): 1350MHz
-	
 	\item OS
-	\subitem Name: Windows 10 
-	\item 
-	
+	\subitem Name: Windows 10 Pro 64bit (Updates bis 22.10.2016)	
 \end{itemize}
 \subsubsection{Setup}
-\subsubsection{Ergebnise}
+\textbf{GPUPI}\\
+Bei GPUPI handelt es sich um ein Programm österreichischer Herkunft, welches mithilfe der BPP-Formel Pi berechnet. Die Besonderheit dieses Programms, sind die Einstellungsoptionen, welche einem die Möglichkeit geben, zum Einen die Anzahl der Nachkommastellen anzugeben (1Million bis 32Milliarden) und zum Anderen die Möglichkeit bietet die Berechnung sowohl auf der CPU als auch auf der GPU durchzuführen. Hier wird nicht nur OpenCl, sondern auch Nvidia CUDA unterstützt (soweit unsere Erfahrungen). Da es sich hier um ein Benchmarkprogramm handelt, werden auch relevante Zeiten ausgegeben. Wir haben in unserem Test sowohl kleine Berechnungen (100Millionen), mittlere (1Milliarde) und große (2Milliarden) durchgeführt, um den Unterschied zu verdeutlichen.
+Die folgenden Grafiken bilden auf der x-Achse die durchgeführten Batches (Arbeitspakete, immer 20) ab und auf der y-Achse die Dauer in Sekunden.\cite{gpupi}\\[0.3cm]
+\textbf{CompuBenchCL}\\
+Bei CompuBenchCL handelt es sich um ein Benchmarkprogramm, welches verschiedenste Arten von Algorithmen durchführt und deren Leistung beurteilt bzw. misst. Der Nachteil des Programms ist die Undurchsichtigkeit.
+Auch hier wird einem die Möglichkeit geboten auszuwählen ob die Tests auf der GPU oder CPU laufen sollen, was sich für unsere Zwecke gut eignet. 
+Die folgende Grafik zeigt die verschiedenen Tests im Vergleich, in den meisten Fällen ist die GPU klar im Vorteil, jedoch beim Bitcoin Mining überraschender Weise nicht.
+Das Facedetection Beispiel folgt dem Viola-Jones Algorithmus, die Ocean Surface Simulation ist eine Fast Fourrier Transformation, bei dem "T-Rex" Beispiel handelt es sich um einen Path tracer, welcher durch verschiedene Events und Beleuchtungen rechenintesiv wird. \cite{compubench}
+\subsubsection{Ergebnisse}
 
 \begin{figure}[!h]
 	\begin{center}
@@ -105,3 +110,5 @@ Laptopmodell: Lenovo Ideapad y510p\\
 		\label{CompuBench}
 	\end{center}
 \end{figure}
+
+

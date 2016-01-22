@@ -3,18 +3,10 @@ The style file: unsrt.bst
 Database file #1: references.bib
 Warning--entry type for "elektronik_gpgpu" isn't style-file defined
 --line 9 of file references.bib
-I was expecting an "="---line 11 of file references.bib
- : 
- : }
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
 Warning--entry type for "matlab" isn't style-file defined
---line 14 of file references.bib
-I was expecting an "="---line 16 of file references.bib
- : 
- : }
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-Warning--all relevant fields are empty in elektronik_gpgpu
-Warning--all relevant fields are empty in matlab
-(There were 2 error messages)
+--line 15 of file references.bib
+Warning--entry type for "gpupi" isn't style-file defined
+--line 21 of file references.bib
+Warning--entry type for "compubench" isn't style-file defined
+--line 27 of file references.bib
+(There were 4 warnings)

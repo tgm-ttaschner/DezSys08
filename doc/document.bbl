@@ -1,9 +1,19 @@
 \begin{thebibliography}{1}
 
 \bibitem{elektronik_gpgpu}
-
+gpgpu.
+\newblock http://www.elektronik-kompendium.de/sites/com/1405281.htm.
 
 \bibitem{matlab}
+matlab.
+\newblock http://de.mathworks.com/discovery/matlab-gpu.html.
 
+\bibitem{gpupi}
+gpupi.
+\newblock https://www.overclockers.at/news/gpupi-international-support-thread.
+
+\bibitem{compubench}
+compubench.
+\newblock https://compubench.com/result.jsp?benchmark=compu15d.
 
 \end{thebibliography}
