@@ -6,4 +6,9 @@
 \BOOKMARK [2][-]{subsection.2.1}{Nutzung von GPUs in normalen Desktop-Anwendungen}{section.2}% 6
 \BOOKMARK [3][-]{subsubsection.2.1.1}{Anwendungen}{subsection.2.1}% 7
 \BOOKMARK [2][-]{subsection.2.2}{Vorteile der GPU bei rechenintensiven Anwendungen}{section.2}% 8
-\BOOKMARK [2][-]{subsection.2.3}{Entwicklungsumgebungen}{section.2}% 9
+\BOOKMARK [2][-]{subsection.2.3}{Entwicklungsumgebungen und Programmiersprachen}{section.2}% 9
+\BOOKMARK [2][-]{subsection.2.4}{Transkompilieren}{section.2}% 10
+\BOOKMARK [2][-]{subsection.2.5}{Benchmarks}{section.2}% 11
+\BOOKMARK [3][-]{subsubsection.2.5.1}{Specs}{subsection.2.5}% 12
+\BOOKMARK [3][-]{subsubsection.2.5.2}{Setup}{subsection.2.5}% 13
+\BOOKMARK [3][-]{subsubsection.2.5.3}{Ergebnise}{subsection.2.5}% 14
