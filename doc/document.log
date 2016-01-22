@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.9.13)  22 JAN 2016 23:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.9.13)  22 JAN 2016 23:22
 entering extended mode
 **document.tex
 (document.tex
@@ -858,7 +858,7 @@ LaTeX Info: Redefining \nameref on input line 48.
 (document.out) (document.out)
 \@outlinefile=\write4
  (special/title.tex
-<images/jdIT_tgm.png, id=59, 748.7975pt x 640.3925pt>
+<images/jdIT_tgm.png, id=63, 748.7975pt x 640.3925pt>
 File: images/jdIT_tgm.png Graphic file (type png)
 
 <use images/jdIT_tgm.png>
@@ -991,17 +991,22 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 83.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 83.
- <images/GPUPI_100M.png, id=138, 730.98094pt x 421.575pt>
+ <images/GPUPI_100M.png, id=144, 730.98094pt x 421.575pt>
 File: images/GPUPI_100M.png Graphic file (type png)
 
 <use images/GPUPI_100M.png>
 Package pdftex.def Info: images/GPUPI_100M.png used on input line 87.
 (pdftex.def)             Requested size: 500.484pt x 288.64204pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<images/GPUPI_1B.png, id=139, 800.9925pt x 411.78844pt>
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 91.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 91.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 91.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 91.
+ [4]
+<images/GPUPI_1B.png, id=151, 800.9925pt x 411.78844pt>
 File: images/GPUPI_1B.png Graphic file (type png)
 
 <use images/GPUPI_1B.png>
@@ -1011,7 +1016,7 @@ Package pdftex.def Info: images/GPUPI_1B.png used on input line 95.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/GPUPI_2B.png, id=140, 721.19438pt x 402.00188pt>
+<images/GPUPI_2B.png, id=152, 721.19438pt x 402.00188pt>
 File: images/GPUPI_2B.png Graphic file (type png)
 
 <use images/GPUPI_2B.png>
@@ -1021,7 +1026,7 @@ Package pdftex.def Info: images/GPUPI_2B.png used on input line 103.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/CompuBench.png, id=141, 365.11406pt x 562.35094pt>
+<images/CompuBench.png, id=153, 365.11406pt x 562.35094pt>
 File: images/CompuBench.png Graphic file (type png)
 
 <use images/CompuBench.png>
@@ -1034,6 +1039,31 @@ LaTeX Warning: Float too large for page by 0.63255pt on input line 115.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 117.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 117.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 117.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 117.
+[5 <./images/GPUPI_100M.png>]
+
+LaTeX Warning: Text page 6 contains only floats.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 117.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 117.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 117.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 117.
+[6 <./images/GPUPI_1B.png> <./images/GPUPI_2B.png>]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 117.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 117.
 )
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 68.
@@ -1043,13 +1073,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 68.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 68.
- [4]
-
-LaTeX Warning: Text page 5 contains only floats.
-
-
-Overfull \vbox (2.50015pt too high) has occurred while \output is active []
-
+ [7]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 68.
 Package babel Info: Redefining ngerman shorthand "~
@@ -1058,26 +1082,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 68.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 68.
-
-[5 <./images/GPUPI_100M.png> <./images/GPUPI_1B.png>]
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 68.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 68.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 68.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 68.
- [6 <./images/GPUPI_2B.png>]
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 68.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 68.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 68.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 68.
- [7 <./images/CompuBench.png>] (document.bbl
+ [8 <./images/CompuBench.png>] (document.bbl
 Underfull \hbox (badness 1924) in paragraph at lines 14--18
 []\T1/cmr/m/n/12 App sdk  a com-ple-te de-ve-lop-ment plat-form.  http://devel
 oper.amd.com/tools-and-
@@ -1110,7 +1115,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 76.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 76.
- [8
+ [9
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 76.
@@ -1118,14 +1123,14 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 76.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 76.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 76.
 Package rerunfilecheck Info: File `document.out' has not changed.
-(rerunfilecheck)             Checksum: AA2C41DE7896C46A6BF7C0C2EF1A30C4;966.
+(rerunfilecheck)             Checksum: A431B75324A86F930D6C3CCE556CA13D;1041.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 76.
  ) 
 Here is how much of TeX's memory you used:
- 11290 strings out of 493673
- 164191 string characters out of 3141524
- 272477 words of memory out of 3000000
- 14398 multiletter control sequences out of 15000+200000
+ 11293 strings out of 493673
+ 164237 string characters out of 3141524
+ 271477 words of memory out of 3000000
+ 14399 multiletter control sequences out of 15000+200000
  12145 words of font info for 32 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  37i,11n,75p,815b,446s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1137,9 +1142,9 @@ ljfour\jknappen\ec\dpi600\ecrm1200.pk> <C:\Users\patrick\AppData\Local\MiKTeX\2
 cal\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1728.pk> <C:\Users\patric
 k\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx2488.pk><C:/P
 rogram Files (x86)/MiKTeX 2.9/fonts/type1/public/ccicons/ccicons.pfb>
-Output written on document.pdf (10 pages, 238627 bytes).
+Output written on document.pdf (11 pages, 240505 bytes).
 PDF statistics:
- 443 PDF objects out of 1000 (max. 8388607)
- 45 named destinations out of 1000 (max. 500000)
- 138 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 454 PDF objects out of 1000 (max. 8388607)
+ 47 named destinations out of 1000 (max. 500000)
+ 146 words of extra memory for PDF output out of 10000 (max. 10000000)
 

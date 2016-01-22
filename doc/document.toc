@@ -12,4 +12,5 @@
 \contentsline {subsection}{\numberline {2.5}Benchmarks}{3}{subsection.2.5}
 \contentsline {subsubsection}{\numberline {2.5.1}Specs}{3}{subsubsection.2.5.1}
 \contentsline {subsubsection}{\numberline {2.5.2}Setup}{4}{subsubsection.2.5.2}
-\contentsline {subsubsection}{\numberline {2.5.3}Ergebnisse}{4}{subsubsection.2.5.3}
+\contentsline {subsubsection}{\numberline {2.5.3}Ergebnisse}{5}{subsubsection.2.5.3}
+\contentsline {subsubsection}{\numberline {2.5.4}Interpretation}{7}{subsubsection.2.5.4}

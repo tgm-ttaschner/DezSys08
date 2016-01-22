@@ -113,5 +113,7 @@ Das Facedetection Beispiel folgt dem Viola-Jones Algorithmus, die Ocean Surface 
 		\label{CompuBench}
 	\end{center}
 \end{figure}
-
-
+\pagebreak
+\subsubsection{Interpretation}
+Es ist offensichtlich, dass die GPU bei deisem Anwendungsfall ihre Vorteile mit sich bringt. Sie liefert wesentlich schneller Ergebnisse, besonders bei der Berechnung von 2Milliarden Nachkommastellen Pi's ist der Unterschied der Rechenzeit zwischen GPU und CPU beträchtlich. Während man auf der CPU für die Berechnung 2308s (38min 28.217s) benötigt, braucht die GPU 856.5 (14min 16.559s) und hierbei handelt es sich letztlich nur um ein Beispiel mit eher geringem Umfang.\\
+Der Unterschied zwischen CUDA und OpenCL wird nicht zu deutlich, wobei bei kürzeren Berechnungen der Unterschied interessanterweise größer ausfällt als bei längeren.
