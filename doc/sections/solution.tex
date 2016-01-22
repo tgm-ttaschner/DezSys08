@@ -35,11 +35,14 @@ Von NVidia wird unter Anderem eine Visual Studio Abwandlung namens NSight zur Ve
 OpenCL Studio eröffnet einem die Möglichkeit mit OpenCL und OpenGL zu arbeiten.\\
 NVidia CUDA Toolkit bietet einem die Möglichkeit CUDA Applikationen in C und C++ zu Programmieren.
 Applikationen für OpenCL werden zum Großteil in C oder C++ programmiert. OpenCL C/C++ bieten die Option direkt für OpenCL zu programmieren.
-
+Bei der APP(Accelerated Parallel Processing) SDK von AMD, handelt es sich um eine Technologie, welche es einem ermöglicht die GPU neben dem Verarbeiten von Grafiken auch für weitere Dinge zu verwenden. Mit der APP-SDK kann unter anderem in Visual Studio programmiert werden. \cite{appsdk}\\
+Bei C++ AMP (Accelerated Massive Parallelism) handelt es sich um ein Programmiermodell, welches die Programmiersprache C++  um eine Library und die Fähigkeit Code auf die GPU auszulagern erweitert.
+Es setzt auf DirectX 11 auf. \cite{AMP}
 \subsection{Transkompilieren}
-Um bestehende Applikationen auf GPUs sinnvoll zu nutzen, müssen diese prinzipiell parallelisierbar sein.
+Um bestehende Applikationen auf GPUs sinnvoll zu nutzen, müssen diese prinzipiell parallelisierbar sein (unabhängige Teile). Zudem sollte das Programm einfach skalieren, es sollte für bspw. das 10-fache an Arbeit nicht das 15-fache an Ressourcen benötigen.
+Threads die auf GPUs laufen sollten im Algemeinen eher kurz gehalten sein und möglichst wenige Verzweigungen besitzen, da eine stetige Synchronisierung von Nöten ist. \cite{GPUGrundlagen}\\
 Das CUDA Toolkit stellt einem einen Transcompiler für C und C++ zur Verfügung, es lagert die rechenintensiven Teile auf die GPU aus.
-Rootbeer ist ein GPUCompiler, welcher Javacode auf der GPU ausführen lässt, ohne dass der Code extra angepasst werden muss.
+Rootbeer ist ein GPUCompiler, welcher Javacode auf der GPU ausführen lässt, ohne dass der Code extra angepasst werden muss.\cite{Rootbeer}
 
 \subsection{Benchmarks}
 \subsubsection{Specs}

@@ -3,17 +3,43 @@
 \bibitem{elektronik_gpgpu}
 gpgpu.
 \newblock http://www.elektronik-kompendium.de/sites/com/1405281.htm.
+\newblock Zuletzt besucht: 22.01.2016.
 
 \bibitem{matlab}
 matlab.
 \newblock http://de.mathworks.com/discovery/matlab-gpu.html.
+\newblock Zuletzt besucht: 22.01.2016.
+
+\bibitem{appsdk}
+App sdk – a complete development platform.
+\newblock
+  http://developer.amd.com/tools-and-sdks/opencl-zone/amd-accelerated-parallel-processing-app-sdk/.
+\newblock Zuletzt besucht: 22.01.2016.
+
+\bibitem{AMP}
+C++ amp (c++ accelerated massive parallelism).
+\newblock https://msdn.microsoft.com/de-de/library/hh265137.aspx.
+\newblock Zuletzt besucht: 22.01.2016.
+
+\bibitem{GPUGrundlagen}
+Grundlagen der gpu-programmierung.
+\newblock
+  https://www.matse.itc.rwth-aachen.de/dienste/public/show\_document.php?id=7251.
+\newblock Zuletzt besucht: 22.01.2016.
+
+\bibitem{Rootbeer}
+Rootbeer gpu compiler.
+\newblock https://github.com/pcpratts/rootbeer1.
+\newblock Zuletzt besucht: 22.01.2016.
 
 \bibitem{gpupi}
 gpupi.
 \newblock https://www.overclockers.at/news/gpupi-international-support-thread.
+\newblock Zuletzt besucht: 22.01.2016.
 
 \bibitem{compubench}
 compubench.
 \newblock https://compubench.com/result.jsp?benchmark=compu15d.
+\newblock Zuletzt besucht: 22.01.2016.
 
 \end{thebibliography}

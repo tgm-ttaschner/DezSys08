@@ -4,9 +4,17 @@ Database file #1: references.bib
 Warning--entry type for "elektronik_gpgpu" isn't style-file defined
 --line 9 of file references.bib
 Warning--entry type for "matlab" isn't style-file defined
---line 15 of file references.bib
+--line 16 of file references.bib
 Warning--entry type for "gpupi" isn't style-file defined
---line 21 of file references.bib
+--line 23 of file references.bib
 Warning--entry type for "compubench" isn't style-file defined
---line 27 of file references.bib
-(There were 4 warnings)
+--line 30 of file references.bib
+Warning--entry type for "appsdk" isn't style-file defined
+--line 44 of file references.bib
+Warning--entry type for "AMP" isn't style-file defined
+--line 51 of file references.bib
+Warning--entry type for "GPUGrundlagen" isn't style-file defined
+--line 58 of file references.bib
+Warning--entry type for "Rootbeer" isn't style-file defined
+--line 72 of file references.bib
+(There were 8 warnings)
