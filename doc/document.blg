@@ -17,8 +17,16 @@ Warning--entry type for "GPUGrundlagen" isn't style-file defined
 --line 58 of file references.bib
 Warning--entry type for "Rootbeer" isn't style-file defined
 --line 72 of file references.bib
+Warning--entry type for "Handbrake" isn't style-file defined
+--line 79 of file references.bib
 Warning--entry type for "llvmfrontend" isn't style-file defined
 --line 86 of file references.bib
 Warning--entry type for "llvm" isn't style-file defined
---line 92 of file references.bib
-(There were 10 warnings)
+--line 93 of file references.bib
+Warning--entry type for "CPUZ" isn't style-file defined
+--line 100 of file references.bib
+Warning--entry type for "GPUZ" isn't style-file defined
+--line 107 of file references.bib
+Warning--entry type for "Notebookcheck" isn't style-file defined
+--line 114 of file references.bib
+(There were 14 warnings)

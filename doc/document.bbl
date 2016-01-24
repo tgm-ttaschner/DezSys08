@@ -30,15 +30,32 @@ Grundlagen der gpu-programmierung.
 \bibitem{llvm}
 Llvm.
 \newblock https://developer.nvidia.com/cuda-llvm-compiler.
+\newblock Zuletzt besucht: 22.01.2016.
 
 \bibitem{llvmfrontend}
 Llvm frontends.
 \newblock http://llvm.org/ProjectsWithLLVM/.
+\newblock Zuletzt besucht: 22.01.2016.
 
 \bibitem{Rootbeer}
 Rootbeer gpu compiler.
 \newblock https://github.com/pcpratts/rootbeer1.
 \newblock Zuletzt besucht: 22.01.2016.
+
+\bibitem{CPUZ}
+Cpu-z | softwares | cpuid.
+\newblock http://www.cpuid.com/softwares/cpu-z.html.
+\newblock Zuletzt besucht: 23.01.2016.
+
+\bibitem{GPUZ}
+Gpu-z video card gpu information utility.
+\newblock https://www.techpowerup.com/gpuz/.
+\newblock Zuletzt besucht: 23.01.2016.
+
+\bibitem{Notebookcheck}
+Notebook / laptop reviews and news - notebookcheck.net.
+\newblock http://www.notebookcheck.net/.
+\newblock Zuletzt besucht: 23.01.2016.
 
 \bibitem{gpupi}
 gpupi.
@@ -48,6 +65,11 @@ gpupi.
 \bibitem{compubench}
 compubench.
 \newblock https://compubench.com/result.jsp?benchmark=compu15d.
+\newblock Zuletzt besucht: 22.01.2016.
+
+\bibitem{Handbrake}
+Handbrake: Open source video transcoder.
+\newblock https://handbrake.fr/.
 \newblock Zuletzt besucht: 22.01.2016.
 
 \end{thebibliography}

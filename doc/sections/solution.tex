@@ -19,7 +19,7 @@ Zu Ergänzen ist die erste Aussage auch noch mit Mathematikprogrammen wie Matlab
 \item Datenanalysen und Finanzmathematik
 \item Verarbeitung von akustischen und elektrischen Signalen
 \item CT- und Ultraschall-Bildrekonstruktion
-\item Modellieren von Molekühlstrukturen
+\item Modellieren von Molekülstrukturen
 \item Kryptografie
 \item Neuronale Netze
 \item Videotranskodierung
@@ -31,7 +31,7 @@ GPUs haben den Vorteil, dass sie auf spezielle Arten von Prozessen optimiert sin
 Im Vergleich zur CPU hat man wesentlich mehr Kerne auf die parallelisiert werden kann.
 
 \subsection{Entwicklungsumgebungen und Programmiersprachen}
-Von NVidia wird unter Anderem eine Visual Studio Abwandlung namens NSight zur Verfügung gestellt, welche es einem ermöglicht in CUDA C/C++, OpenCL, DirectCompute, Direct3D, and OpenGL zu programmieren.\\
+Von Nvidia wird unter anderem eine Visual Studio Abwandlung namens NSight zur Verfügung gestellt, welche es einem ermöglicht in CUDA C/C++, OpenCL, DirectCompute, Direct3D, and OpenGL zu programmieren.\\
 OpenCL Studio eröffnet einem die Möglichkeit mit OpenCL und OpenGL zu arbeiten.\\
 NVidia CUDA Toolkit bietet einem die Möglichkeit CUDA Applikationen in C und C++ zu Programmieren.
 Applikationen für OpenCL werden zum Großteil in C oder C++ programmiert. OpenCL C/C++ bieten die Option direkt für OpenCL zu programmieren.
@@ -41,12 +41,15 @@ Es setzt auf DirectX 11 auf. \cite{AMP}
 \subsection{Transkompilieren}
 Um bestehende Applikationen auf GPUs sinnvoll zu nutzen, müssen diese prinzipiell parallelisierbar sein (unabhängige Teile). Zudem sollte das Programm einfach skalieren, es sollte für bspw. das 10-fache an Arbeit nicht das 15-fache an Ressourcen benötigen.
 Threads die auf GPUs laufen sollten im Algemeinen eher kurz gehalten sein und möglichst wenige Verzweigungen besitzen, da eine stetige Synchronisierung von Nöten ist. \cite{GPUGrundlagen}\\
-CUDA LLVM bietet einem die Möglichkeit für eine neue oder bereits existierende Sprache ein frontend zu schreiben, welches diese in die "Internal Representaion" von LLVM umwandelt. Viele frontends sind bereist vorhanden, siehe: \cite{llvm} \cite{llvmfrontend} \\
+CUDA LLVM bietet einem die Möglichkeit für eine neue oder bereits existierende Sprache ein Frontend zu schreiben, welches diese in die "Internal Representaion" von LLVM umwandelt. Viele Frontends sind bereits vorhanden, siehe: \cite{llvm} \cite{llvmfrontend} \\
 Rootbeer ist ein GPUCompiler, welcher Javacode auf der GPU ausführen lässt, ohne dass der Code extra angepasst werden muss.\cite{Rootbeer}
 
 \subsection{Benchmarks}
 \subsubsection{Specs}
-Laptopmodell: Lenovo Ideapad y510p\\
+Die Spezifikationen wurden mit Hilfe von CPU-Z, GPU-Z und notebookcheck.net ermittelt.\\
+\cite{CPUZ} \cite{GPUZ} \cite{Notebookcheck}
+
+Laptopmodell: Lenovo Ideapad y510p
 \begin{itemize}
 	\item Mainboard:
 	\subitem Name: Intel HM86 Chipset
@@ -56,32 +59,127 @@ Laptopmodell: Lenovo Ideapad y510p\\
 	\subitem Kerne: 4 (virtuell 8)
 	\subitem Chipset: Intel Haswell
 	\subitem Southbridge: HM86
-	\subitem 
 	\item RAM:
 	\subitem 16GB DDR3
 	\subitem Dual Channel
 	\subitem Maxfrequenz: PC3-12800 (800MHz)
 	\item GPU (2x):
-	\subitem Modell: NVidia GeForce GT 755M
+	\subitem Modell: Nvidia GeForce GT 755M
 	\subitem Architektur: GK107 (Kepler)
-	\subitem Busbreite: 128b
-	\subitem VRAM: 2GB GDDR5(Hynix)
+	\subitem Busbreite: 128 Bit
+	\subitem VRAM: 2GB GDDR5 (Hynix)
 	\subitem Core (Taktfrequenz): 980MHz (Boost bis 1020MHz)
 	\subitem Memory (Taktfrequenz): 1350MHz
 	\item OS
 	\subitem Name: Windows 10 Pro 64bit (Updates bis 22.10.2016)	
 \end{itemize}
+
+Laptopmodell: MSI GT70 2OC
+\begin{itemize}
+	\item Mainboard:
+	\subitem Name: Intel HM87 Chipset
+	\item CPU:
+	\subitem Modell: Intel Core i7 4700MQ @ 2.40GHz
+	\subitem Kerne: 4 (virtuell 8)
+	\subitem Chipset: Intel Haswell
+	\subitem Southbridge: HM86
+	\item RAM:
+	\subitem 8GB DDR3L
+	\subitem Single Channel
+	\subitem Maxfrequenz: PC3-12800 (800MHz)
+	\subitem CL-Taktung: 11-11-11-28
+	\item GPU 1:
+	\subitem Modell: Nvidia GeForce GTX 770M
+	\subitem Architektur: GK106 (Kepler)
+	\subitem Busbreite: 192 Bit
+	\subitem VRAM: 3GB GDDR5 (Samsung)
+	\subitem Core (Taktfrequenz): 706MHz (Boost bis 797MHz)
+	\subitem Memory (Taktfrequenz): 1002MHz
+	\item GPU 2:
+	\subitem Modell: Intel HD Graphics 4600
+	\subitem Architektur: GT2
+	\subitem Busbreite: 64 Bit
+	\subitem VRAM: shared memory
+	\subitem Core (Taktfrequenz): 400MHz (Boost bis 1150MHz)
+	\subitem Memory (Taktfrequenz): 800MHz
+	\item OS
+	\subitem Name: Windows 8 (Updates bis 22.10.2016)	
+\end{itemize}
+
+
 \subsubsection{Setup}
 \textbf{GPUPI}\\
-Bei GPUPI handelt es sich um ein Programm österreichischer Herkunft, welches mithilfe der BPP-Formel Pi berechnet. Die Besonderheit dieses Programms, sind die Einstellungsoptionen, welche einem die Möglichkeit geben, zum Einen die Anzahl der Nachkommastellen anzugeben (1Million bis 32Milliarden) und zum Anderen die Möglichkeit bietet die Berechnung sowohl auf der CPU als auch auf der GPU durchzuführen. Hier wird nicht nur OpenCl, sondern auch Nvidia CUDA unterstützt (soweit unsere Erfahrungen). Da es sich hier um ein Benchmarkprogramm handelt, werden auch relevante Zeiten ausgegeben. Wir haben in unserem Test sowohl kleine Berechnungen (100Millionen), mittlere (1Milliarde) und große (2Milliarden) durchgeführt, um den Unterschied zu verdeutlichen.
+Bei GPUPI handelt es sich um ein Programm österreichischer Herkunft, welches mithilfe der BPP-Formel Pi berechnet. Die Besonderheit dieses Programms, sind die Einstellungsoptionen, welche einem die Möglichkeit geben, zum Einen die Anzahl der Nachkommastellen anzugeben (1 Million bis 32 Milliarden) und zum Anderen die Möglichkeit bietet die Berechnung sowohl auf der CPU als auch auf der GPU durchzuführen. Hier wird nicht nur OpenCL, sondern auch Nvidia CUDA unterstützt (soweit unsere Erfahrungen). Da es sich hier um ein Benchmarkprogramm handelt, werden auch relevante Zeiten ausgegeben. Wir haben in unserem Test sowohl kleine Berechnungen (100Millionen), mittlere (1 Milliarde) und große (2 Milliarden) durchgeführt, um den Unterschied zu verdeutlichen.
 Die folgenden Grafiken bilden auf der x-Achse die durchgeführten Batches (Arbeitspakete, immer 20) ab und auf der y-Achse die Dauer in Sekunden.\cite{gpupi}\\[0.3cm]
 \textbf{CompuBenchCL}\\
 Bei CompuBenchCL handelt es sich um ein Benchmarkprogramm, welches verschiedenste Arten von Algorithmen durchführt und deren Leistung beurteilt bzw. misst. Der Nachteil des Programms ist die Undurchsichtigkeit.
 Auch hier wird einem die Möglichkeit geboten auszuwählen ob die Tests auf der GPU oder CPU laufen sollen, was sich für unsere Zwecke gut eignet. 
 Die folgende Grafik zeigt die verschiedenen Tests im Vergleich, in den meisten Fällen ist die GPU klar im Vorteil, jedoch beim Bitcoin Mining überraschender Weise nicht.
 Das Facedetection Beispiel folgt dem Viola-Jones Algorithmus, die Ocean Surface Simulation ist eine Fast Fourrier Transformation, bei dem "T-Rex" Beispiel handelt es sich um einen Path tracer, welcher durch verschiedene Events und Beleuchtungen rechenintesiv wird. \cite{compubench}
-\subsubsection{Ergebnisse}
 
+\textbf{Handbrake}\\
+Handbrake ist eine von Eric Petit entwickelte freie Software zur Transkodierung von Videodateien. Das Programm wird in Objective-C, C und C\# entwickelt und bietet ebenfalls die Möglichkeit mittels 'Intel QuickSync Video' Videos auf der GPU rendern zu lassen.
+\cite{Handbrake}
+
+Zu Testzwecken wurde eine Videodatei mit den folgenden Spezifikationen auf dem Laptop MSI GT70 2OC mit der CPU und der Intel HD Graphics 4600 Grafikkarte konvertiert:
+
+\textbf{Input}
+\begin{itemize}
+	\item Video
+	\subitem Auflösung: 1920x1080 Pixel
+	\subitem Bildrate: 29.970 FPS
+	\subitem Codec: AVC
+	\subitem Profil: High@L4.1
+	\subitem Dauer: 7min 59s
+	\subitem Bildseitenverhältnis: 16:9
+	\subitem Bitrate: 30.0 Mbps
+	\subitem Bitratenmodus: konstant
+	\subitem Farbraum: NTSC YUV 4:2:0
+	\subitem Farbtiefe: 8 Bit
+	\item Audio
+	\subitem Format: PCM
+	\subitem Bitrate: 4608 kbps
+	\subitem Bitratenmodus: konstant
+	\subitem Samplingrate: 96.0 KHz
+	\subitem Bittiefe: 24 Bits
+	\subitem Kanäle: 2 (Stereo)
+	\subitem Dauer: 7min 59s
+\end{itemize}
+
+\textbf{Output}
+\begin{itemize}
+	\item Video
+	\subitem Auflösung: 1920x1080 Pixel
+	\subitem Bildrate: 29.970 FPS
+	\subitem Codec: AVC
+	\subitem Profil: High@L4.1
+	\subitem Dauer: 7min 59s
+	\subitem Bildseitenverhältnis: 16:9
+	\subitem Bitrate: 4.0 Mbps
+	\subitem Bitratenmodus: konstant
+	\subitem Farbraum: YUV 4:2:0
+	\subitem Farbtiefe: 8 Bit
+	\item Audio
+	\subitem Format: AAC HE-AAC/LC
+	\subitem Bitrate: 128 kbps
+	\subitem Bitratenmodus: variabel
+	\subitem Samplingrate: 48.0 KHz
+	\subitem Bittiefe: 16 Bits
+	\subitem Kanäle: 2 (Stereo)
+	\subitem Dauer: 7min 59s
+\end{itemize}
+
+
+
+Das Ziel ist es ein Video einer Blu-Ray in ein portableres Format zu konvertieren, welches auf Abspielgeräten, wie Smart-TVs, Spielekonsolen, aber auch leistungsfähigeren Handys abspielbar ist.
+
+Zusätzlich zu den Angaben beim Output wurde in Handbrake ebenfalls der Parameter x264 Preset: Slow (CPU) und QSV Preset: Best Quality (GPU) eingetragen.
+Anzumerken ist, dass das Best Quality Preset qualitativ in etwa dem Slow Preset entspricht.
+
+
+\subsubsection{Ergebnisse}
+Die GPUPI und CompuBench Testläufe wurden am Lenovo Ideapad y510p durchgeführt.
+Die Handbrake Testläufe wurden am MSI GT70 2OC mit der Intel HD 4600 durchgeführt.
 \begin{figure}[!h]
 	\begin{center}
 		\includegraphics[width=1.0\linewidth]{images/GPUPI_100M.png}
@@ -115,5 +213,25 @@ Das Facedetection Beispiel folgt dem Viola-Jones Algorithmus, die Ocean Surface 
 \end{figure}
 \pagebreak
 \subsubsection{Interpretation}
-Es ist offensichtlich, dass die GPU bei deisem Anwendungsfall ihre Vorteile mit sich bringt. Sie liefert wesentlich schneller Ergebnisse, besonders bei der Berechnung von 2Milliarden Nachkommastellen Pi's ist der Unterschied der Rechenzeit zwischen GPU und CPU beträchtlich. Während man auf der CPU für die Berechnung 2308s (38min 28.217s) benötigt, braucht die GPU 856.5 (14min 16.559s) und hierbei handelt es sich letztlich nur um ein Beispiel mit eher geringem Umfang.\\
+Es ist offensichtlich, dass die GPU bei deisem Anwendungsfall ihre Vorteile mit sich bringt. Sie liefert wesentlich schneller Ergebnisse, besonders bei der Berechnung von 2 Milliarden Nachkommastellen Pi's ist der Unterschied der Rechenzeit zwischen GPU und CPU beträchtlich. Während man auf der CPU für die Berechnung 2308s (38min 28.217s) benötigt, braucht die GPU 856.5 (14min 16.559s) und hierbei handelt es sich letztlich nur um ein Beispiel mit eher geringem Umfang.\\
 Der Unterschied zwischen CUDA und OpenCL wird nicht zu deutlich, wobei bei kürzeren Berechnungen der Unterschied interessanterweise größer ausfällt als bei längeren.
+
+\subsubsection{Handbrake Fazit}
+\begin{figure}[!h]
+	\begin{center}
+\includegraphics[width=0.9\linewidth]{images/Handbrake_3runs.png}
+		\caption{Handbrake: CPU vs. GPU - 3 Durchläufe}
+		\label{Handbrake3runs}
+	\end{center}
+\end{figure}
+
+\begin{figure}[!h]
+	\begin{center}
+\includegraphics[width=0.9\linewidth]{images/Handbrake_avg.png}
+		\caption{Handbrake: CPU vs. GPU - Mittelwert der Durchläufe}
+		\label{HandbrakeAVG}
+	\end{center}
+\end{figure}
+
+Anhand der Grafiken (Abbildung 5 und Abbildung 6) lässt sich erkennen, dass die GPU im Schnitt 4.7x schneller hochauflösende Videos konvertieren kann, als die CPU. Die CPU hat im Schnitt 16.22 fps erreicht, während die GPU auf 76.02 fps gekommen ist. Die CPU Auslastung lag beim CPU Rendering stets bei 100\%, während beim GPU Rendering eine Auslastung von ca. 20\% zustande gekommen ist. Die Ursache dafür ist die Tatsache, dass in dem Fall die Bilder des Videos mit der CPU dekodiert wurden, beim den Durchläufen also ausschließlich nur die GPU am Enkodieren war.
+Interessanterweise dauert der erste Durchlauf in beiden Fällen um einige Sekunden kürzer.
